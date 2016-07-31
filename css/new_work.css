@@ -1,0 +1,55 @@
+.topContent {
+	border: none;
+	margin-top: 8%;
+}
+
+.topContent h2 {
+	font-family: 'Poiret One', arial;
+	color: #e56038;
+	margin-bottom: 10%
+}
+
+#my-work.row {
+	margin-top: 5%;
+}
+
+.bottomContent, #whiteleyContent, #farfieldContent, #comingSoonContent {
+	height: 350px;
+}
+
+#whiteley.image-wrapper {
+	background-image: url('../img/shopicon.jpg');
+}
+
+#farfield.image-wrapper {
+	background-image: url("../img/Farfield boxers 2.png");
+}
+
+#proj-3.image-wrapper {
+	background-image: url("../img/Optimized-work-in-progress2.jpg");
+}
+
+#proj-4.image-wrapper {
+	background-image: url("../img/Optimized-work-in-progress2.jpg");
+}
+
+#whiteley, #farfield, #proj-3, #proj-4.image-wrapper {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: solid 1px #000;
+	border-radius: 50%;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+/*media queries */
+
+@media screen and (min-width: 150px) and (max-width: 397px) {
+	.bottomContent, #whiteleyContent, #farfieldContent, #comingSoonContent {
+	height: 300px;
+}
+}
+
+

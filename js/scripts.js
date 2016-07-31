@@ -21,7 +21,7 @@ function initMap() {
 /*var myWork = [{ title: "Audio Restored", pic: "img/Optimized-audio-restored.png"}, { title: "The Whiteley Collection", pic: "img/Optimized-shopicon.jpg", href: "http://thewhiteleycollection.herokuapp.com/"}, { title: "Project 3 Coming Soon", pic: "img/Optimized-work-in-progress.jpg"}, { title: "Project 4 Coming Soon", pic: "img/Optimized-work-in-progress.jpg"}
 ];*/
 
-
+/*
 $(document).ready(function() {
 	//all your code goes in here
 	//alert("Document is ready!")
@@ -82,3 +82,7 @@ $(document).ready(function() {
 		$("p.info").html("");
 	});
 });//doc .ready close. no more code after here
+
+
+*/
+

@@ -1,0 +1,49 @@
+.topContent {
+	border: none;
+	margin-top: 10%;
+}
+
+.panel-group {
+	margin-left: 6%;
+	margin-right: 6%;
+	position: center;
+}
+.panel-default>.panel-heading:hover {
+	background-color: #e56038;
+	color: #FFF;
+	-webkit-transition: color 0ms;
+	text-decoration: none;
+}
+.panel-default {
+	border: 0;
+}
+.panel-group a {
+	outline: 0;
+	text-decoration: none;
+}
+.panel-body {
+	color: #484848;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 767px) {
+	#FAQ-accordion {
+		width: 100%;
+		margin-left: 0%;
+		padding-left: 0%;
+		padding-right: 1%;
+		left: 0;
+		float: left;
+	}
+}
+
+/*medi queries*/
+
+@media only screen and (min-width: 150px) and (max-width: 633px) {
+
+header p {
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 5px;
+}

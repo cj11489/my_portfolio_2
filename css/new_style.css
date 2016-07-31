@@ -1,0 +1,234 @@
+body {
+	font-family: arial, 'Lucida Sans Unicode';
+	line-height: 1.5;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+}
+
+.body {
+	margin: 0 auto;
+	width: 80%;
+	clear: both; /* makes your container so now elements will float on the left or right side*/
+}
+
+.main-header img {
+	width: 100%;
+	height: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+header h1 {
+    margin:35px 0 0 0;
+    font-size:55px;
+    color:#e56038;
+    font-family: 'Poiret One', arial;
+}
+
+header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+    color: #4A463B;
+    margin-left:132px;
+}
+
+.main-header nav {
+	background-color: #e56038;
+	height: 40px;
+}
+
+.main-header nav ul {
+	list-style: none; /*removes bullet points*/
+	margin: 0 auto;
+}
+
+.main-header nav ul li {
+	float: left;
+	display: inline;
+}
+
+.main-header nav a:link, .main-header nav a:visited {
+	color: #FFF;
+	display: inline-block;
+	padding: 10px 25px;
+	height: 40px; /* add height here so the background color detailed below fits perfectly in the nav bar*/
+	text-decoration: none;
+}
+
+.main-header nav a:hover, .main-header nav a:active, 
+.main-header nav .active a:link, .main-header nav .active a:visited {
+	background-color: #FDFDFD;
+	text-shadow: none;
+	text-decoration: none;
+	color: #e56038;
+}
+
+.mainContent {
+	line-height: 25px;
+	overflow: hidden;
+}
+
+.content {
+	margin-top: 5%;
+}
+
+.topContent {
+	padding-bottom: 5%;
+	border-bottom: solid 1px #e56038;
+}
+
+.topContent #column-1 h2, #column-2 h2, #column-3 h2 {
+	font-family: 'Poiret One', arial;
+	color: #e56038;
+}
+
+.bottomContent {
+	margin-top: 5%;
+	text-align: center;
+}
+
+.bottomContent #aboutContent, #contactContent, #workContent, #faqContent {
+	height: 350px;
+}
+
+.image-wrapper {
+	position: relative;
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+.image-wrapper img {
+	height: auto;
+	width: 152%;
+}
+
+#work img {
+	width: 200%;
+}
+
+#faq img {
+	width: 160%;
+}
+
+.image-wrapper .image-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	color: #FFF;
+
+}
+
+.image-wrapper:hover .image-overlay {
+	display: block;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.image-wrapper .image-overlay .content {
+	position: absolute;
+	top: 50%;
+	left: 35%;
+	height: 20px;
+	width: 250px;
+	margin-top: -10px;
+	margin-left: -75px;
+	font-size: 3em;
+	font-family: 'Poiret One', arial;
+	font-weight: 900
+}
+
+.image-wrapper .image-overlay #contact-me, #faq {
+	color: #000;
+}
+
+.mainFooter {
+	width: 100%;
+	height: 40px;
+	float: left;
+	background-color: #e56038;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.mainFooter p {
+	width: 92%;
+	margin: 10px auto;
+	color: #FFF;
+	font-family:; arial;
+	font-size: 1em;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+.mainFooter a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+
+.body {
+	width: 90%;
+}
+
+.main-header nav {
+	height: 200px;
+}
+
+.main-header nav ul {
+	padding-left: 0;
+}
+
+.main-header nav ul li {
+	width: 100%;
+	text-align: center;
+}
+
+.main-header nav a:link, .main-header nav a:visited {
+	padding: 10px 25px;
+	height: 40px; /* add height here so the background color detailed below fits perfectly in the nav bar*/
+	display: block;
+}
+
+.topContent #column-1, #column-2, #column-3 {
+	padding-bottom: 10%;
+}
+
+.bottomContent {
+	margin-top: 15%;
+}
+
+}
+
+@media only screen and (min-width: 150px) and (max-width: 397px) {
+
+header h1 {
+    font-size: 40px;
+}
+
+header p {
+    font-size: 14px;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.image-wrapper {
+	height: 250px;
+	width: 250px;
+}
+
+.image-wrapper .image-overlay .content {
+	top: 48%;
+	left: 30%;
+}
+
+}

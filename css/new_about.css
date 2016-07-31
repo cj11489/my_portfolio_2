@@ -1,0 +1,152 @@
+.topContent {
+	border: none;
+}
+
+.about-intro h2 {
+	font-family: 'Poiret One', arial;
+	text-align: center;
+	color: #000;
+	font-size: 3em;
+	margin-top: 8%;
+	margin-bottom: 50px;
+}
+
+.intro-column {
+	margin-bottom: 5%;
+}
+
+.intro-column p {
+	color: #000;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 32px;
+}
+
+.skills-section {
+	background-color: #A8A6A6;
+	color: #FFF;
+	padding-left: 5%;
+	padding-top: 3%;
+	padding-bottom: 5%;
+}
+
+.skills-section h2 {
+	font-family: 'Poiret One', arial;
+	padding-bottom: 5%;
+}
+
+.skills-section p {
+	font-family: arial;
+	letter-spacing: 1px;
+}
+
+.bottom-section {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.about-main-text h2 {
+	font-family: 'Poiret One', arial;
+	color: #e56038;
+	padding-bottom: 20px;
+}
+
+.about-main-text p {
+	color: #000;
+}
+
+.cv-window {
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+#profile-pic {
+	margin-top: 5%;
+}
+
+#profile-pic img {
+	border-radius: 50%;
+}
+
+/* cv button */
+
+.modal-button {
+	float: left;
+	margin-top: 2%;
+	padding-right: 2%;
+}
+.modal-body {
+	height: 700px;
+}
+#modalframe {
+	width: 100%;
+	height: 68%;
+	margin-top: 1%;
+	zoom: 80%;
+}
+#myModalLabel {
+	width: 80%;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width: 500px) and (max-width: 991px) {
+
+#profile-pic img {
+	width: 50%;
+	margin-left: 25%;
+}
+
+}
+
+
+@media only screen and (min-width: 775px) and (max-width: 991px) {
+
+.skills-section {
+	width: 50%;
+	margin-left: 25%;
+}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+#profile-pic {
+	margin-top: 20%;
+}
+
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 774px) {
+
+.skills-section {
+	width: 60%;
+	margin-left: 20%
+}
+
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 499px) {
+
+.skills-section {
+	width: 85%;
+	margin-left: 7.5%;
+
+}
+
+
+}
+
+
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+
+
+
+
+
+}

@@ -1,0 +1,38 @@
+.topContent {
+	border: none;
+	margin-top: 5%;
+}
+
+.contact-main-text {
+	margin-left: 5%;
+}
+
+.contact-main-text h2 {
+	font-family: 'Poiret One', arial;
+	color: #e56038;
+	padding-bottom: 20px;
+}
+
+.contact-main-text p {
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size: 1.25em;
+	padding-bottom: 20px;
+}
+
+#map {
+	width: 90%;
+	height: 300px;
+	float: right;
+	margin-right: 5%;
+}
+
+/* media queries */
+
+@media only screen and (min-width: 398px) and (max-width: 470px) {
+
+header p {
+	margin-left: 70px;
+}
+
+}	
