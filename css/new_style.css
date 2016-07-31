@@ -103,16 +103,31 @@ header p {
 	overflow: hidden;
 }
 
-.image-wrapper img {
+#about.image-wrapper {
+	background-image: url('../img/about-cube1.jpg');
+}
+
+#contact.image-wrapper {
+	background-image: url("../img/contact-photo-wide.jpg");
+}
+
+#work.image-wrapper {
+	background-image: url("../img/my-work-html.png");
+}
+
+#faq.image-wrapper {
+	background-image: url("../img/question-mark-463497_1920.jpg");
+}
+
+#about, #contact, #work, #faq.image-wrapper {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 50%;
+}
+
+#faq.image-wrapper img {
 	height: auto;
-	width: 152%;
-}
-
-#work img {
-	width: 200%;
-}
-
-#faq img {
 	width: 160%;
 }
 
