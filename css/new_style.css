@@ -104,11 +104,11 @@ header p {
 }
 
 #about.image-wrapper {
-	background-image: url('../img/about-cube1.jpg');
+	background-image: url('../img/Optimized-about-cube1 (1).jpg');
 }
 
 #contact.image-wrapper {
-	background-image: url("../img/contact-photo-wide.jpg");
+	background-image: url("../img/Optimized-contact-photo-wide.jpg");
 }
 
 #work.image-wrapper {
@@ -116,7 +116,7 @@ header p {
 }
 
 #faq.image-wrapper {
-	background-image: url("../img/question-mark-463497_1920.jpg");
+	background-image: url("../img/Optimized-question-mark-463497_1920.jpg");
 }
 
 #about, #contact, #work, #faq.image-wrapper {

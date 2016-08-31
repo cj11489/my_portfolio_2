@@ -13,7 +13,7 @@
 	margin-top: 5%;
 }
 
-.bottomContent, #whiteleyContent, #farfieldContent, #comingSoonContent {
+.bottomContent, #whiteleyContent, #farfieldContent, #javaScriptContent, #comingSoonContent {
 	height: 350px;
 }
 
@@ -25,15 +25,17 @@
 	background-image: url("../img/Farfield boxers 2.png");
 }
 
-#proj-3.image-wrapper {
-	background-image: url("../img/Optimized-work-in-progress2.jpg");
+#javaScript.image-wrapper {
+	background-color: #000;
+	text-align: center;
+	font-color: red;
 }
 
 #proj-4.image-wrapper {
 	background-image: url("../img/Optimized-work-in-progress2.jpg");
 }
 
-#whiteley, #farfield, #proj-3, #proj-4.image-wrapper {
+#whiteley, #farfield, #proj-4.image-wrapper {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -44,10 +46,21 @@
 	white-space: nowrap;
 }
 
+#javaScript.image-wrapper {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	white-space: nowrap;
+}
+
+#javaScript.image-wrapper .image-overlay .content {
+	margin-top: -15px;
+}
+
 /*media queries */
 
 @media screen and (min-width: 150px) and (max-width: 397px) {
-	.bottomContent, #whiteleyContent, #farfieldContent, #comingSoonContent {
+	.bottomContent, #whiteleyContent, #farfieldContent, #javaScriptContent, #comingSoonContent {
 	height: 300px;
 }
 }
