@@ -226,6 +226,12 @@ header p {
 
 }
 
+@media only screen and (min-width: 1441px) and (max-width: 1880px) {
+	.body {
+		width: 65%;
+	}
+}
+
 @media only screen and (min-width: 150px) and (max-width: 397px) {
 
 header h1 {
