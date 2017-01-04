@@ -16,7 +16,6 @@
 	height: 300px;
 	width: 300px;
 	margin: 0 auto;
-	border-radius: 0%;
 	overflow: hidden;
 }
 
@@ -35,17 +34,9 @@
 	background-image: url("../img/Farfield boxers 2.png");
 }
 
-#javaScript.image-wrapper {
-	background-color: #000;
-	text-align: center;
-	color: #FFF;
-}
-
 #gitHub.image-wrapper {
 	background-color: #60b044;
-	text-align: left;
 	border: solid 1px;
-	border-radius: 0;
 }
 
 #MTD.image-wrapper {
@@ -65,22 +56,19 @@
 
 }
 
-#javaScript.image-wrapper {
+#gitHub, #javaScript.image-wrapper {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	white-space: nowrap;
 	border-radius: 0;
+	background-color: #000;
+	text-align: center;
+	color: #FFF;
 }
 
 #javaScript.image-wrapper .image-overlay .content {
 	color: #FFF;
-}
-
-#gitHub.image-wrapper .image-overlay .content {
-	top: 45%;
-	left: 18%;
-
 }
 
 #javaScript.image-wrapper .image-overlay .content {

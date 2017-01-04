@@ -67,6 +67,10 @@ header p {
 	text-align: center;
 }
 
+.navbar-default .navbar-nav>li>a {
+	color: #FFF;
+}
+
 .navbar-default .navbar-nav>li>a:hover , .navbar-default .navbar-nav>li>a:active, 
 .navbar-default .navbar-nav>li> .active a:link, .navbar-default .navbar-nav>li> .active a:visited {
 	background-color: #FDFDFD;
@@ -214,6 +218,14 @@ header p {
 }
 
 /* Media Queries */
+
+@media only screen and (min-width: 992px) and (max-width: 1202px) {
+
+	.topContent #column-1 h2, #column-2 h2, #column-3 h2 {
+		font-size: 1.7em;
+	}
+
+}
 
 @media only screen and (min-width: 992px) and (max-width: 1100px) {
 	#about.image-wrapper, #contact.image-wrapper, #work.image-wrapper, #faq.image-wrapper    {
