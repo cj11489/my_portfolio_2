@@ -37,22 +37,18 @@ header p {
     margin-bottom: 25px;
 }
 
-.main-header nav {
+.navbar {
+	min-height: 40px;
+	border: none;
+	border-radius: 0;
+}
+
+.navbar-default {
 	background-color: #e56038;
 	height: 40px;
 }
 
-.main-header nav ul {
-	list-style: none; /*removes bullet points*/
-	margin: 0 auto;
-}
-
-.main-header nav ul li {
-	float: left;
-	display: inline;
-}
-
-.main-header nav a:link, .main-header nav a:visited {
+.navbar-default a:link, .main-header nav a:visited {
 	color: #FFF;
 	display: inline-block;
 	padding: 10px 25px;
@@ -60,12 +56,40 @@ header p {
 	text-decoration: none;
 }
 
-.main-header nav a:hover, .main-header nav a:active, 
-.main-header nav .active a:link, .main-header nav .active a:visited {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: #FFF;
+	width: 100%;
+	text-align: center;
+}
+
+.navbar-default .navbar-nav>li {
+	text-align: center;
+}
+
+.navbar-default .navbar-nav>li>a:hover , .navbar-default .navbar-nav>li>a:active, 
+.navbar-default .navbar-nav>li> .active a:link, .navbar-default .navbar-nav>li> .active a:visited {
 	background-color: #FDFDFD;
+	width: 100%;
 	text-shadow: none;
 	text-decoration: none;
 	color: #e56038;
+}
+
+.navbar-toggle {
+	margin-top: 3px;
+	background-color: #FFF;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	border-color: none;
+	background-color: #e56038;
+	opacity: 0.95;
+}
+
+.navbar-collapse {
+	position: relative;
+	z-index: 2;
 }
 
 .mainContent {
@@ -93,45 +117,49 @@ header p {
 }
 
 .bottomContent #aboutContent, #contactContent, #workContent, #faqContent {
-	height: 350px;
+	height: 500px;
 }
 
-.image-wrapper {
+#about.image-wrapper, #contact.image-wrapper, #work.image-wrapper, #faq.image-wrapper    {
 	position: relative;
-	height: 300px;
-	width: 300px;
+	height: 400px;
+	width: 400px;
 	margin: 0 auto;
-	border-radius: 100%;
+	border-radius: 0%;
 	overflow: hidden;
 }
 
 #about.image-wrapper {
-	background-image: url('../img/Optimized-about-cube1 (1).jpg');
+	/*background-image: url('../img/profilePic2.jpg');*/
+	background-color: #e56038;
 }
 
 #contact.image-wrapper {
-	background-image: url("../img/Optimized-contact-photo-wide.jpg");
+	/*background-image: url("../img/Optimized-contact-photo-wide.jpg");*/
+	background-color: #42ab9e;
 }
 
 #work.image-wrapper {
-	background-image: url("../img/my-work-html.png");
+	/*background-image: url("../img/my-work-html.png");*/
+	background-color: #F7B733;
 }
 
 #faq.image-wrapper {
-	background-image: url("../img/Optimized-question-mark-463497_1920.jpg");
+	/*background-image: url("../img/Optimized-question-mark-463497_1920.jpg");*/
+	background-color: #FC4A1A;
 }
 
 #about, #contact, #work, #faq.image-wrapper {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	border-radius: 50%;
+	border-radius: 0%;
 }
 
-#faq.image-wrapper img {
+/*#faq.image-wrapper img {
 	height: auto;
 	width: 160%;
-}
+}*/
 
 .image-wrapper .image-overlay {
 	position: absolute;
@@ -139,7 +167,6 @@ header p {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	color: #FFF;
 
 }
 
@@ -158,10 +185,7 @@ header p {
 	margin-left: -75px;
 	font-size: 3em;
 	font-family: 'Poiret One', arial;
-	font-weight: 900
-}
-
-.image-wrapper .image-overlay #contact-me, #faq {
+	font-weight: 900;
 	color: #000;
 }
 
@@ -191,39 +215,38 @@ header p {
 
 /* Media Queries */
 
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
+	#about.image-wrapper, #contact.image-wrapper, #work.image-wrapper, #faq.image-wrapper    {
+		height: 350px;
+		width: 350px;
+		margin-top: 10%;
+	}
+}
+
 @media only screen and (min-width: 150px) and (max-width: 600px) {
 
-.body {
-	width: 90%;
+	.body {
+		width: 90%;
+	}
+
+	.topContent #column-1, #column-2, #column-3 {
+		padding-bottom: 10%;
+	}
+
+	.bottomContent {
+		margin-top: 15%;
+	}
 }
 
-.main-header nav {
-	height: 200px;
-}
+@media only screen and (min-width: 398px) and (max-width: 500px) {
+	#about.image-wrapper, #contact.image-wrapper, #work.image-wrapper, #faq.image-wrapper    {
+		height: 350px;
+		width: 350px;
+	}
 
-.main-header nav ul {
-	padding-left: 0;
-}
-
-.main-header nav ul li {
-	width: 100%;
-	text-align: center;
-}
-
-.main-header nav a:link, .main-header nav a:visited {
-	padding: 10px 25px;
-	height: 40px; /* add height here so the background color detailed below fits perfectly in the nav bar*/
-	display: block;
-}
-
-.topContent #column-1, #column-2, #column-3 {
-	padding-bottom: 10%;
-}
-
-.bottomContent {
-	margin-top: 15%;
-}
-
+	.bottomContent #aboutContent, #contactContent, #workContent, #faqContent {
+		height: 400px;
+	}
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 1880px) {
@@ -234,24 +257,28 @@ header p {
 
 @media only screen and (min-width: 150px) and (max-width: 397px) {
 
-header h1 {
-    font-size: 40px;
-}
+	header h1 {
+	    font-size: 40px;
+	}
 
-header p {
-    font-size: 14px;
-    margin-left: 30px;
-    margin-top: 5px;
-}
+	header p {
+	    font-size: 14px;
+	    margin-left: 30px;
+	    margin-top: 5px;
+	}
 
-.image-wrapper {
-	height: 250px;
-	width: 250px;
-}
+	#about.image-wrapper, #contact.image-wrapper, #work.image-wrapper, #faq.image-wrapper    {
+		height: 300px;
+		width: 300px;
+	}
 
-.image-wrapper .image-overlay .content {
-	top: 48%;
-	left: 30%;
-}
+	.bottomContent #aboutContent, #contactContent, #workContent, #faqContent {
+		height: 350px;
+	}
+
+	.image-wrapper .image-overlay .content {
+		top: 48%;
+		left: 30%;
+	}
 
 }

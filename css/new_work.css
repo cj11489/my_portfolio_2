@@ -1,12 +1,6 @@
 .topContent {
 	border: none;
-	margin-top: 8%;
-}
-
-.topContent h2 {
-	font-family: 'Poiret One', arial;
-	color: #e56038;
-	margin-bottom: 10%
+	margin-top: 5%;
 }
 
 #my-work.row {
@@ -17,12 +11,24 @@
 	height: 350px;
 }
 
+#MTD, #whiteley, #farfield, #gitHub, #javaScript.image-wrapper {
+	position: relative;
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	border-radius: 0%;
+	overflow: hidden;
+}
+
 #MTD.image-wrapper .image-overlay .content {
 	color: #000;
 }
 
+
 #whiteley.image-wrapper {
 	background-image: url('../img/shopicon.jpg');
+	z-index: 0;
+	position: relative;
 }
 
 #farfield.image-wrapper {
@@ -32,12 +38,14 @@
 #javaScript.image-wrapper {
 	background-color: #000;
 	text-align: center;
+	color: #FFF;
 }
 
 #gitHub.image-wrapper {
 	background-color: #60b044;
-	text-align: center;
+	text-align: left;
 	border: solid 1px;
+	border-radius: 0;
 }
 
 #MTD.image-wrapper {
@@ -50,10 +58,11 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	border: solid 1px #000;
-	border-radius: 50%;
+	border-radius: 0%;
 	overflow: hidden;
 	text-indent: 100%;
 	white-space: nowrap;
+
 }
 
 #javaScript.image-wrapper {
@@ -61,6 +70,17 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	white-space: nowrap;
+	border-radius: 0;
+}
+
+#javaScript.image-wrapper .image-overlay .content {
+	color: #FFF;
+}
+
+#gitHub.image-wrapper .image-overlay .content {
+	top: 45%;
+	left: 18%;
+
 }
 
 #javaScript.image-wrapper .image-overlay .content {
@@ -70,9 +90,14 @@
 /*media queries */
 
 @media screen and (min-width: 150px) and (max-width: 397px) {
-	.bottomContent, #whiteleyContent, #farfieldContent, #javaScriptContent, #comingSoonContent {
-	height: 300px;
-}
+	.bottomContent, #whiteleyContent, #farfieldContent, #javaScriptContent, #comingSoonContent, #MTDContent, #gitHubContent {
+		height: 320px;
+	}
+
+	#MTD, #whiteley, #farfield, #gitHub, #javaScript.image-wrapper {
+		height: 280px;
+		width: 280px;
+	}
 }
 
 
