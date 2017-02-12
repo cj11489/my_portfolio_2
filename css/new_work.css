@@ -7,11 +7,11 @@
 	margin-top: 5%;
 }
 
-.bottomContent, #whiteleyContent, #farfieldContent, #javaScriptContent, #gitHubContent, #MTDContent {
+.bottomContent, #whiteleyContent, #farfieldContent, #javaScriptContent, #gitHubContent, #MTDContent, #gameTimeContent {
 	height: 350px;
 }
 
-#MTD, #whiteley, #farfield, #gitHub, #javaScript.image-wrapper {
+#gameTime, #MTD, #whiteley, #farfield, #gitHub, #javaScript.image-wrapper {
 	position: relative;
 	height: 300px;
 	width: 300px;
@@ -44,7 +44,11 @@
 	color: #000;
 }
 
-#whiteley, #farfield, #MTD.image-wrapper {
+#gameTime.image-wrapper {
+	background-image: url("../img/gameTimeLogo.png");
+}
+
+#whiteley, #farfield, #MTD, #gameTime.image-wrapper {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -78,11 +82,11 @@
 /*media queries */
 
 @media screen and (min-width: 150px) and (max-width: 397px) {
-	.bottomContent, #whiteleyContent, #farfieldContent, #javaScriptContent, #comingSoonContent, #MTDContent, #gitHubContent {
+	.bottomContent, #whiteleyContent, #farfieldContent, #javaScriptContent, #comingSoonContent, #MTDContent, #gitHubContent, #gameTimeContent {
 		height: 320px;
 	}
 
-	#MTD, #whiteley, #farfield, #gitHub, #javaScript.image-wrapper {
+	#gameTime, #MTD, #whiteley, #farfield, #gitHub, #javaScript.image-wrapper {
 		height: 280px;
 		width: 280px;
 	}
